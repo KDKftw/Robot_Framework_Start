@@ -15,8 +15,10 @@ Raise Exception
 Element not found
     Raise Exception    Element not found
 
+*** Keywords ***
 Wait Until Page Contains Element
-    [Arguments]    ${locator}    ${timeout}=20s
+    [Arguments]    ${locator}    ${timeout}=20
+    ${timeout} = Convert To Integer    ${timeout}
     FOR    ${counter}    IN RANGE    ${timeout}
         Run Keyword If    '${counter}' == '${timeout}'    Exit For Loop
         ${element}=    Get Web Element    ${locator}
@@ -24,6 +26,8 @@ Wait Until Page Contains Element
         Sleep    1s
     END
     Fail    Element not found
+
+
 
 
 Get WebElements
@@ -52,7 +56,7 @@ ${URL}    https://www.fischer.cz/last-minute
 Test LM is Displayed
     Open Browser    ${URL}    ${browser}
     Maximize Browser Window
-    Sleep    10.5
+    Sleep    10s
     ${zajezdyLMsingle}=    Get WebElements    ${browser}    //[@class='page-tour']
     ${zajezdyLMall}=    Get WebElements    ${browser}    //[@class='page-tour']
     Run Keyword If    '${zajezdyLMsingle}'!=''    Should Be Visible    ${zajezdyLMsingle}[0]
@@ -62,7 +66,7 @@ Test LM is Displayed
     ${rozbal}=    Get WebElements    ${browser}    //[@class='page-tour-cell page-tour-control']
     Run Keyword If    '${rozbal}'!=''    Should Be Visible    ${rozbal}[0]
     Click Element    ${rozbal}[0]
-    Sleep    2
+    Sleep    2s
     ${rozbalenyZajezd}=    Get WebElements    ${browser}    //[@class='page-tour-hotel-name']
 
     ${rozbalenyZajezdAll}=    Get WebElements    ${browser}    //*[@class='page-tour-hotel-name']
