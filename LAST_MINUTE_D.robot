@@ -16,6 +16,13 @@ Element not found
     Raise Exception    Element not found
 
 *** Keywords ***
+Convert To Integer
+    [Arguments]    ${string}
+    ${integer}=    Convert To Integer    ${string}
+    [Return]       ${integer}
+
+
+
 Wait Until Page Contains Element
     [Arguments]    ${locator}    ${timeout}=20
     ${timeout} = Convert To Integer    ${timeout}
