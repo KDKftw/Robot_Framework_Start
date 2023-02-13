@@ -7,18 +7,24 @@ Open Browser ${url} ${browser}
 Close Browser
 Close All Browsers
 
+Raise Exception
+    [Arguments]    ${message}
+    Raise Exception    ${message}
+
+
 Element not found
     Raise Exception    Element not found
 
 Wait Until Page Contains Element
     [Arguments]    ${locator}    ${timeout}=20s
     FOR    ${counter}    IN RANGE    ${timeout}
-        Run Keyword If    '${counter}' == '${timeout}'    Exit For Loop    Element not found
+        Run Keyword If    '${counter}' == '${timeout}'    Exit For Loop
         ${element}=    Get Web Element    ${locator}
         Run Keyword If    '${element}' != 'None'    Exit For Loop
-        Sleep    1
+        Sleep    1s
     END
-    Element not found
+    Fail    Element not found
+
 
 Get WebElements
     [Arguments]    ${browser}    ${locator}
