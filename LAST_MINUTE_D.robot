@@ -1,5 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
+Library    BuiltIn
 
 *** Keywords ***
 [Arguments] ${url} ${browser}
@@ -7,21 +8,18 @@ Open Browser ${url} ${browser}
 Close Browser
 Close All Browsers
 
+
 Raise Exception
     [Arguments]    ${message}
     Raise Exception    ${message}
 
-
 Element not found
     Raise Exception    Element not found
 
-*** Keywords ***
 Convert To Integer
     [Arguments]    ${string}
     ${integer}=    Convert To Integer    ${string}
     [Return]       ${integer}
-
-
 
 Wait Until Page Contains Element
     [Arguments]    ${locator}    ${timeout}=20
@@ -33,9 +31,6 @@ Wait Until Page Contains Element
         Sleep    1s
     END
     Fail    Element not found
-
-
-
 
 Get WebElements
     [Arguments]    ${browser}    ${locator}
@@ -57,11 +52,11 @@ Click Element
 
 *** Variables ***
 ${browser}    Chrome
-${URL}    https://www.fischer.cz/last-minute
+${url}    https://www.fischer.cz/last-minute
 
 *** Test Cases ***
 Test LM is Displayed
-    Open Browser    ${URL}    ${browser}
+    Open Browser    ${url}    ${browser}
     Maximize Browser Window
     Sleep    10s
     ${zajezdyLMsingle}=    Get WebElements    ${browser}    //[@class='page-tour']
