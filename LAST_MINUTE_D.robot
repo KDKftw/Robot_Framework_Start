@@ -24,12 +24,12 @@ Wait Until Page Contains Element
     [Arguments]    ${locator}    ${timeout}=20
     ${timeout}=    Convert To Integer    ${timeout}
     Set Variable    ${timeout}
-    FOR    ${counter}    IN RANGE    ${timeout}
-        Run Keyword If    '${counter}' == '${timeout}'    Exit For Loop
-        ${element}=    Get Web Element    ${locator}
-        Run Keyword If    '${element}' != 'None'    Exit For Loop
-        Sleep    1s
-    END
+#    FOR    ${counter}    IN RANGE    ${timeout}
+#        Run Keyword If    '${counter}' == '${timeout}'    Exit For Loop
+#        ${element}=    Get Web Element    ${locator}
+#        Run Keyword If    '${element}' != 'None'    Exit For Loop
+#        Sleep    1s
+#    END
     Fail    Element not found
 
 Get WebElements
