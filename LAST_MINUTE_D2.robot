@@ -3,12 +3,6 @@ Library    SeleniumLibrary
 Library    BuiltIn
 
 *** Keywords ***
-[Arguments] ${url} ${browser}
-Open Browser ${url} ${browser}
-Close Browser
-Close All Browsers
-
-
 Raise Exception
     [Arguments]    ${message}
     Raise Exception    ${message}
@@ -24,22 +18,19 @@ Convert To Integer
 Wait Until Page Contains Element
     [Arguments]    ${locator}    ${timeout}=20
     ${timeout}=    Convert To Integer    ${timeout}
-    Set Variable    ${timeout}
-    FOR    ${counter}    IN RANGE    ${timeout}
-        Run Keyword If    '${counter}' == '${timeout}'    Exit For Loop
-        ${element}=    Get Web Element    ${locator}
-        Run Keyword If    '${element}' != 'None'    Exit For Loop
-        Sleep    1s
-    END
-    Fail    Element not found
-
+    ${timeout_count}=    Set Variable    ${timeout}
+    : FOR    ${counter}    IN RANGE    ${timeout}
+    \    Run Keyword If    '${counter}' == '${timeout}'    Exit For Loop
+    \    ${element}=    Get Web Element    ${locator}
+    \    Run Keyword If    '${element}' != 'None'    Exit For Loop
+    \    Sleep    1s
+    : Fail    Element not found
 
 Get WebElements
     [Arguments]    ${browser}    ${locator}
     Wait Until Page Contains Element    ${locator}    timeout=20s
     ${elements}=    Call Method    ${browser}    find_elements_by_xpath    ${locator}
     [Return]    ${elements}
-
 
 Should Be Visible
     [Arguments]    ${element}
@@ -53,8 +44,8 @@ Click Element
     Click Element    ${element}
 
 *** Variables ***
-${browser}    Chrome
-${url}    https://www.fischer.cz/last-minute
+${browser}=    Chrome
+${url}=    https://www.fischer.cz/last-minute
 
 *** Test Cases ***
 Test LM is Displayed
@@ -64,14 +55,15 @@ Test LM is Displayed
     ${zajezdyLMsingle}=    Get WebElements    ${browser}    //[@class='page-tour']
     ${zajezdyLMall}=    Get WebElements    ${browser}    //[@class='page-tour']
     Run Keyword If    '${zajezdyLMsingle}'!=''    Should Be Visible    ${zajezdyLMsingle}[0]
-    FOR    ${element}    IN    @{zajezdyLMall}
-        Run Keyword    Should Be Visible    ${element}
-    END
+    : FOR    ${element}    IN    @{zajezdyLMall}
+    \    Run Keyword    Should Be Visible    ${element}
     ${rozbal}=    Get WebElements    ${browser}    //[@class='page-tour-cell page-tour-control']
     Run Keyword If    '${rozbal}'!=''    Should Be Visible    ${rozbal}[0]
     Click Element    ${rozbal}[0]
     Sleep    2s
     ${rozbalenyZajezd}=    Get WebElements    ${browser}    //[@class='page-tour-hotel-name']
-
     ${rozbalenyZajezdAll}=    Get WebElements    ${browser}    //*[@class='page-tour-hotel-name']
     Run Keyword If    '${rozbalenyZajezd}'!=''    Should Be Visible    ${rozbalenyZajezd}[0]
+    : FOR    ${element}    IN    @{rozbalenyZajezdAll}
+    \    Run Keyword    Should Be Visible    ${element}
+    Close Browser

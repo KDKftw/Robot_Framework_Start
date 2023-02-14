@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.10.4 on win32)" generated="20230214 13:53:18.631" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.10.4 on win32)" generated="20230214 14:40:18.219" rpa="false" schemaversion="3">
 <suite id="s1" name="LAST MINUTE D" source="C:\Users\KDK\Desktop\Robot_Start\Robot_Framework_Start\LAST_MINUTE_D.robot">
-<test id="s1-t1" name="Test LM is Displayed" line="60">
+<test id="s1-t1" name="Test LM is Displayed" line="57">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230214 13:53:18.871" level="INFO">Opening browser 'Chrome' to base url 'https://www.fischer.cz/last-minute'.</msg>
-<status status="PASS" starttime="20230214 13:53:18.871" endtime="20230214 13:53:24.430"/>
+<msg timestamp="20230214 14:40:18.482" level="INFO">Opening browser 'Chrome' to base url 'https://www.fischer.cz/last-minute'.</msg>
+<status status="PASS" starttime="20230214 14:40:18.482" endtime="20230214 14:40:25.061"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230214 13:53:24.430" endtime="20230214 13:53:24.625"/>
+<status status="PASS" starttime="20230214 14:40:25.062" endtime="20230214 14:40:25.241"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230214 13:53:34.628" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20230214 13:53:24.626" endtime="20230214 13:53:34.628"/>
+<msg timestamp="20230214 14:40:35.250" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20230214 14:40:25.243" endtime="20230214 14:40:35.250"/>
 </kw>
 <kw name="Get WebElements">
 <var>${zajezdyLMsingle}</var>
@@ -320,207 +320,207 @@
 <kw name="Convert To Integer">
 <var>${integer}</var>
 <arg>${string}</arg>
-<msg timestamp="20230214 13:53:34.662" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
-<status status="FAIL" starttime="20230214 13:53:34.661" endtime="20230214 13:53:34.662"/>
+<msg timestamp="20230214 14:40:35.291" level="FAIL">Maximum limit of started keywords and control structures exceeded.</msg>
+<status status="FAIL" starttime="20230214 14:40:35.290" endtime="20230214 14:40:35.291"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.661" endtime="20230214 13:53:34.662"/>
+<status status="FAIL" starttime="20230214 14:40:35.290" endtime="20230214 14:40:35.291"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.661" endtime="20230214 13:53:34.662"/>
+<status status="FAIL" starttime="20230214 14:40:35.290" endtime="20230214 14:40:35.293"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.660" endtime="20230214 13:53:34.662"/>
+<status status="FAIL" starttime="20230214 14:40:35.289" endtime="20230214 14:40:35.293"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.660" endtime="20230214 13:53:34.663"/>
+<status status="FAIL" starttime="20230214 14:40:35.288" endtime="20230214 14:40:35.294"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.660" endtime="20230214 13:53:34.663"/>
+<status status="FAIL" starttime="20230214 14:40:35.288" endtime="20230214 14:40:35.294"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.660" endtime="20230214 13:53:34.663"/>
+<status status="FAIL" starttime="20230214 14:40:35.288" endtime="20230214 14:40:35.294"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.659" endtime="20230214 13:53:34.663"/>
+<status status="FAIL" starttime="20230214 14:40:35.287" endtime="20230214 14:40:35.294"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.659" endtime="20230214 13:53:34.663"/>
+<status status="FAIL" starttime="20230214 14:40:35.287" endtime="20230214 14:40:35.295"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.659" endtime="20230214 13:53:34.664"/>
+<status status="FAIL" starttime="20230214 14:40:35.287" endtime="20230214 14:40:35.295"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.658" endtime="20230214 13:53:34.664"/>
+<status status="FAIL" starttime="20230214 14:40:35.287" endtime="20230214 14:40:35.295"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.658" endtime="20230214 13:53:34.664"/>
+<status status="FAIL" starttime="20230214 14:40:35.286" endtime="20230214 14:40:35.295"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.658" endtime="20230214 13:53:34.664"/>
+<status status="FAIL" starttime="20230214 14:40:35.286" endtime="20230214 14:40:35.295"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.658" endtime="20230214 13:53:34.665"/>
+<status status="FAIL" starttime="20230214 14:40:35.285" endtime="20230214 14:40:35.296"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.657" endtime="20230214 13:53:34.665"/>
+<status status="FAIL" starttime="20230214 14:40:35.285" endtime="20230214 14:40:35.296"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.657" endtime="20230214 13:53:34.665"/>
+<status status="FAIL" starttime="20230214 14:40:35.285" endtime="20230214 14:40:35.296"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.657" endtime="20230214 13:53:34.665"/>
+<status status="FAIL" starttime="20230214 14:40:35.285" endtime="20230214 14:40:35.297"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.656" endtime="20230214 13:53:34.666"/>
+<status status="FAIL" starttime="20230214 14:40:35.284" endtime="20230214 14:40:35.297"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.656" endtime="20230214 13:53:34.666"/>
+<status status="FAIL" starttime="20230214 14:40:35.284" endtime="20230214 14:40:35.297"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.656" endtime="20230214 13:53:34.666"/>
+<status status="FAIL" starttime="20230214 14:40:35.284" endtime="20230214 14:40:35.297"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.655" endtime="20230214 13:53:34.666"/>
+<status status="FAIL" starttime="20230214 14:40:35.283" endtime="20230214 14:40:35.298"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.655" endtime="20230214 13:53:34.666"/>
+<status status="FAIL" starttime="20230214 14:40:35.283" endtime="20230214 14:40:35.298"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.655" endtime="20230214 13:53:34.667"/>
+<status status="FAIL" starttime="20230214 14:40:35.282" endtime="20230214 14:40:35.298"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.654" endtime="20230214 13:53:34.667"/>
+<status status="FAIL" starttime="20230214 14:40:35.282" endtime="20230214 14:40:35.298"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.654" endtime="20230214 13:53:34.667"/>
+<status status="FAIL" starttime="20230214 14:40:35.281" endtime="20230214 14:40:35.299"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.654" endtime="20230214 13:53:34.667"/>
+<status status="FAIL" starttime="20230214 14:40:35.281" endtime="20230214 14:40:35.299"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.653" endtime="20230214 13:53:34.667"/>
+<status status="FAIL" starttime="20230214 14:40:35.281" endtime="20230214 14:40:35.299"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.653" endtime="20230214 13:53:34.668"/>
+<status status="FAIL" starttime="20230214 14:40:35.280" endtime="20230214 14:40:35.299"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.653" endtime="20230214 13:53:34.668"/>
+<status status="FAIL" starttime="20230214 14:40:35.280" endtime="20230214 14:40:35.300"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.652" endtime="20230214 13:53:34.668"/>
+<status status="FAIL" starttime="20230214 14:40:35.280" endtime="20230214 14:40:35.300"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.652" endtime="20230214 13:53:34.668"/>
+<status status="FAIL" starttime="20230214 14:40:35.279" endtime="20230214 14:40:35.300"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.652" endtime="20230214 13:53:34.668"/>
+<status status="FAIL" starttime="20230214 14:40:35.279" endtime="20230214 14:40:35.300"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.651" endtime="20230214 13:53:34.669"/>
+<status status="FAIL" starttime="20230214 14:40:35.279" endtime="20230214 14:40:35.301"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.651" endtime="20230214 13:53:34.669"/>
+<status status="FAIL" starttime="20230214 14:40:35.278" endtime="20230214 14:40:35.301"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.651" endtime="20230214 13:53:34.669"/>
+<status status="FAIL" starttime="20230214 14:40:35.278" endtime="20230214 14:40:35.301"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.650" endtime="20230214 13:53:34.669"/>
+<status status="FAIL" starttime="20230214 14:40:35.278" endtime="20230214 14:40:35.301"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.650" endtime="20230214 13:53:34.669"/>
+<status status="FAIL" starttime="20230214 14:40:35.278" endtime="20230214 14:40:35.301"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.650" endtime="20230214 13:53:34.669"/>
+<status status="FAIL" starttime="20230214 14:40:35.277" endtime="20230214 14:40:35.302"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.649" endtime="20230214 13:53:34.670"/>
+<status status="FAIL" starttime="20230214 14:40:35.277" endtime="20230214 14:40:35.302"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.649" endtime="20230214 13:53:34.670"/>
+<status status="FAIL" starttime="20230214 14:40:35.277" endtime="20230214 14:40:35.302"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.649" endtime="20230214 13:53:34.670"/>
+<status status="FAIL" starttime="20230214 14:40:35.277" endtime="20230214 14:40:35.302"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.648" endtime="20230214 13:53:34.670"/>
+<status status="FAIL" starttime="20230214 14:40:35.276" endtime="20230214 14:40:35.303"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.648" endtime="20230214 13:53:34.670"/>
+<status status="FAIL" starttime="20230214 14:40:35.276" endtime="20230214 14:40:35.303"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.648" endtime="20230214 13:53:34.670"/>
+<status status="FAIL" starttime="20230214 14:40:35.275" endtime="20230214 14:40:35.303"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.648" endtime="20230214 13:53:34.671"/>
+<status status="FAIL" starttime="20230214 14:40:35.274" endtime="20230214 14:40:35.303"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.647" endtime="20230214 13:53:34.671"/>
+<status status="FAIL" starttime="20230214 14:40:35.274" endtime="20230214 14:40:35.304"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.647" endtime="20230214 13:53:34.671"/>
+<status status="FAIL" starttime="20230214 14:40:35.273" endtime="20230214 14:40:35.304"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.647" endtime="20230214 13:53:34.671"/>
+<status status="FAIL" starttime="20230214 14:40:35.272" endtime="20230214 14:40:35.304"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.646" endtime="20230214 13:53:34.671"/>
+<status status="FAIL" starttime="20230214 14:40:35.272" endtime="20230214 14:40:35.304"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.646" endtime="20230214 13:53:34.671"/>
+<status status="FAIL" starttime="20230214 14:40:35.272" endtime="20230214 14:40:35.304"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.646" endtime="20230214 13:53:34.672"/>
+<status status="FAIL" starttime="20230214 14:40:35.271" endtime="20230214 14:40:35.304"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.646" endtime="20230214 13:53:34.672"/>
+<status status="FAIL" starttime="20230214 14:40:35.271" endtime="20230214 14:40:35.305"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.645" endtime="20230214 13:53:34.672"/>
+<status status="FAIL" starttime="20230214 14:40:35.270" endtime="20230214 14:40:35.305"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.645" endtime="20230214 13:53:34.672"/>
+<status status="FAIL" starttime="20230214 14:40:35.270" endtime="20230214 14:40:35.305"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.645" endtime="20230214 13:53:34.672"/>
+<status status="FAIL" starttime="20230214 14:40:35.269" endtime="20230214 14:40:35.305"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.645" endtime="20230214 13:53:34.673"/>
+<status status="FAIL" starttime="20230214 14:40:35.269" endtime="20230214 14:40:35.306"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.644" endtime="20230214 13:53:34.673"/>
+<status status="FAIL" starttime="20230214 14:40:35.269" endtime="20230214 14:40:35.306"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.644" endtime="20230214 13:53:34.673"/>
+<status status="FAIL" starttime="20230214 14:40:35.268" endtime="20230214 14:40:35.306"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.643" endtime="20230214 13:53:34.673"/>
+<status status="FAIL" starttime="20230214 14:40:35.268" endtime="20230214 14:40:35.306"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.643" endtime="20230214 13:53:34.673"/>
+<status status="FAIL" starttime="20230214 14:40:35.268" endtime="20230214 14:40:35.306"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.643" endtime="20230214 13:53:34.673"/>
+<status status="FAIL" starttime="20230214 14:40:35.268" endtime="20230214 14:40:35.306"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.643" endtime="20230214 13:53:34.673"/>
+<status status="FAIL" starttime="20230214 14:40:35.267" endtime="20230214 14:40:35.307"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.642" endtime="20230214 13:53:34.674"/>
+<status status="FAIL" starttime="20230214 14:40:35.267" endtime="20230214 14:40:35.307"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.642" endtime="20230214 13:53:34.674"/>
+<status status="FAIL" starttime="20230214 14:40:35.267" endtime="20230214 14:40:35.307"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.642" endtime="20230214 13:53:34.674"/>
+<status status="FAIL" starttime="20230214 14:40:35.266" endtime="20230214 14:40:35.307"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.641" endtime="20230214 13:53:34.674"/>
+<status status="FAIL" starttime="20230214 14:40:35.266" endtime="20230214 14:40:35.307"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.641" endtime="20230214 13:53:34.674"/>
+<status status="FAIL" starttime="20230214 14:40:35.265" endtime="20230214 14:40:35.307"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.641" endtime="20230214 13:53:34.674"/>
+<status status="FAIL" starttime="20230214 14:40:35.265" endtime="20230214 14:40:35.308"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.641" endtime="20230214 13:53:34.675"/>
+<status status="FAIL" starttime="20230214 14:40:35.265" endtime="20230214 14:40:35.308"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.640" endtime="20230214 13:53:34.675"/>
+<status status="FAIL" starttime="20230214 14:40:35.264" endtime="20230214 14:40:35.309"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.640" endtime="20230214 13:53:34.675"/>
+<status status="FAIL" starttime="20230214 14:40:35.264" endtime="20230214 14:40:35.310"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.639" endtime="20230214 13:53:34.675"/>
+<status status="FAIL" starttime="20230214 14:40:35.264" endtime="20230214 14:40:35.310"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.639" endtime="20230214 13:53:34.675"/>
+<status status="FAIL" starttime="20230214 14:40:35.264" endtime="20230214 14:40:35.310"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.639" endtime="20230214 13:53:34.675"/>
+<status status="FAIL" starttime="20230214 14:40:35.263" endtime="20230214 14:40:35.310"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.638" endtime="20230214 13:53:34.675"/>
+<status status="FAIL" starttime="20230214 14:40:35.263" endtime="20230214 14:40:35.310"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.638" endtime="20230214 13:53:34.676"/>
+<status status="FAIL" starttime="20230214 14:40:35.262" endtime="20230214 14:40:35.311"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.638" endtime="20230214 13:53:34.676"/>
+<status status="FAIL" starttime="20230214 14:40:35.262" endtime="20230214 14:40:35.311"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.637" endtime="20230214 13:53:34.676"/>
+<status status="FAIL" starttime="20230214 14:40:35.262" endtime="20230214 14:40:35.311"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.637" endtime="20230214 13:53:34.676"/>
+<status status="FAIL" starttime="20230214 14:40:35.261" endtime="20230214 14:40:35.311"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.636" endtime="20230214 13:53:34.676"/>
+<status status="FAIL" starttime="20230214 14:40:35.261" endtime="20230214 14:40:35.311"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.636" endtime="20230214 13:53:34.677"/>
+<status status="FAIL" starttime="20230214 14:40:35.261" endtime="20230214 14:40:35.311"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.636" endtime="20230214 13:53:34.677"/>
+<status status="FAIL" starttime="20230214 14:40:35.261" endtime="20230214 14:40:35.311"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.635" endtime="20230214 13:53:34.677"/>
+<status status="FAIL" starttime="20230214 14:40:35.260" endtime="20230214 14:40:35.312"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.635" endtime="20230214 13:53:34.677"/>
+<status status="FAIL" starttime="20230214 14:40:35.260" endtime="20230214 14:40:35.312"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.635" endtime="20230214 13:53:34.677"/>
+<status status="FAIL" starttime="20230214 14:40:35.260" endtime="20230214 14:40:35.312"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.634" endtime="20230214 13:53:34.677"/>
+<status status="FAIL" starttime="20230214 14:40:35.259" endtime="20230214 14:40:35.312"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.634" endtime="20230214 13:53:34.677"/>
+<status status="FAIL" starttime="20230214 14:40:35.257" endtime="20230214 14:40:35.312"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.634" endtime="20230214 13:53:34.678"/>
+<status status="FAIL" starttime="20230214 14:40:35.256" endtime="20230214 14:40:35.312"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.632" endtime="20230214 13:53:34.678"/>
+<status status="FAIL" starttime="20230214 14:40:35.255" endtime="20230214 14:40:35.313"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.632" endtime="20230214 13:53:34.678"/>
+<status status="FAIL" starttime="20230214 14:40:35.254" endtime="20230214 14:40:35.313"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.632" endtime="20230214 13:53:34.678"/>
+<status status="FAIL" starttime="20230214 14:40:35.254" endtime="20230214 14:40:35.313"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.632" endtime="20230214 13:53:34.678"/>
+<status status="FAIL" starttime="20230214 14:40:35.253" endtime="20230214 14:40:35.313"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.631" endtime="20230214 13:53:34.678"/>
+<status status="FAIL" starttime="20230214 14:40:35.253" endtime="20230214 14:40:35.313"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.631" endtime="20230214 13:53:34.678"/>
+<status status="FAIL" starttime="20230214 14:40:35.253" endtime="20230214 14:40:35.313"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.631" endtime="20230214 13:53:34.678"/>
+<status status="FAIL" starttime="20230214 14:40:35.252" endtime="20230214 14:40:35.313"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.630" endtime="20230214 13:53:34.679"/>
+<status status="FAIL" starttime="20230214 14:40:35.252" endtime="20230214 14:40:35.313"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.630" endtime="20230214 13:53:34.679"/>
+<status status="FAIL" starttime="20230214 14:40:35.252" endtime="20230214 14:40:35.314"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.629" endtime="20230214 13:53:34.679"/>
+<status status="FAIL" starttime="20230214 14:40:35.251" endtime="20230214 14:40:35.314"/>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <arg>${timeout}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" starttime="20230214 13:53:34.679" endtime="20230214 13:53:34.679"/>
+<status status="NOT RUN" starttime="20230214 14:40:35.314" endtime="20230214 14:40:35.314"/>
 </kw>
 <for flavor="IN RANGE">
 <var>${counter}</var>
@@ -531,35 +531,35 @@
 <arg>'${counter}' == '${timeout}'</arg>
 <arg>Exit For Loop</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="NOT RUN" starttime="20230214 13:53:34.679" endtime="20230214 13:53:34.679"/>
+<status status="NOT RUN" starttime="20230214 14:40:35.314" endtime="20230214 14:40:35.314"/>
 </kw>
 <kw name="Get WebElement" library="SeleniumLibrary">
 <var>${element}</var>
 <arg>${locator}</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<status status="NOT RUN" starttime="20230214 13:53:34.679" endtime="20230214 13:53:34.679"/>
+<status status="NOT RUN" starttime="20230214 14:40:35.314" endtime="20230214 14:40:35.314"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>'${element}' != 'None'</arg>
 <arg>Exit For Loop</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="NOT RUN" starttime="20230214 13:53:34.679" endtime="20230214 13:53:34.680"/>
+<status status="NOT RUN" starttime="20230214 14:40:35.314" endtime="20230214 14:40:35.314"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230214 13:53:34.680" endtime="20230214 13:53:34.680"/>
+<status status="NOT RUN" starttime="20230214 14:40:35.314" endtime="20230214 14:40:35.315"/>
 </kw>
-<status status="NOT RUN" starttime="20230214 13:53:34.679" endtime="20230214 13:53:34.680"/>
+<status status="NOT RUN" starttime="20230214 14:40:35.314" endtime="20230214 14:40:35.315"/>
 </iter>
-<status status="NOT RUN" starttime="20230214 13:53:34.679" endtime="20230214 13:53:34.680"/>
+<status status="NOT RUN" starttime="20230214 14:40:35.314" endtime="20230214 14:40:35.315"/>
 </for>
 <kw name="Fail" library="BuiltIn">
 <arg>Element not found</arg>
 <doc>Fails the test with the given message and optionally alters its tags.</doc>
-<status status="NOT RUN" starttime="20230214 13:53:34.680" endtime="20230214 13:53:34.680"/>
+<status status="NOT RUN" starttime="20230214 14:40:35.315" endtime="20230214 14:40:35.315"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.629" endtime="20230214 13:53:34.680"/>
+<status status="FAIL" starttime="20230214 14:40:35.251" endtime="20230214 14:40:35.315"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <var>${elements}</var>
@@ -567,82 +567,89 @@
 <arg>find_elements_by_xpath</arg>
 <arg>${locator}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20230214 13:53:34.680" endtime="20230214 13:53:34.680"/>
+<status status="NOT RUN" starttime="20230214 14:40:35.315" endtime="20230214 14:40:35.315"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:34.628" endtime="20230214 13:53:34.680"/>
+<status status="FAIL" starttime="20230214 14:40:35.251" endtime="20230214 14:40:35.315"/>
 </kw>
 <kw name="Get WebElements">
 <var>${zajezdyLMall}</var>
 <arg>${browser}</arg>
 <arg>//[@class='page-tour']</arg>
-<status status="NOT RUN" starttime="20230214 13:53:34.681" endtime="20230214 13:53:34.681"/>
+<status status="NOT RUN" starttime="20230214 14:40:35.316" endtime="20230214 14:40:35.316"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>'${zajezdyLMsingle}'!=''</arg>
 <arg>Should Be Visible</arg>
 <arg>${zajezdyLMsingle}[0]</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="NOT RUN" starttime="20230214 13:53:34.681" endtime="20230214 13:53:34.681"/>
+<status status="NOT RUN" starttime="20230214 14:40:35.316" endtime="20230214 14:40:35.316"/>
 </kw>
 <for flavor="IN">
-<var>${element}</var>
-<value>@{zajezdyLMall}</value>
+<var>${i}</var>
+<value>RANGE</value>
+<value>${zajezdyLMall.__len__()}</value>
 <iter>
-<var name="${element}"/>
+<var name="${i}"/>
+<kw name="Set Variable" library="BuiltIn">
+<var>${element}</var>
+<arg>${zajezdyLMall[${i}]}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20230214 14:40:35.316" endtime="20230214 14:40:35.316"/>
+</kw>
 <kw name="Run Keyword" library="BuiltIn">
 <arg>Should Be Visible</arg>
 <arg>${element}</arg>
 <doc>Executes the given keyword with the given arguments.</doc>
-<status status="NOT RUN" starttime="20230214 13:53:34.681" endtime="20230214 13:53:34.681"/>
+<status status="NOT RUN" starttime="20230214 14:40:35.316" endtime="20230214 14:40:35.317"/>
 </kw>
-<status status="NOT RUN" starttime="20230214 13:53:34.681" endtime="20230214 13:53:34.681"/>
+<status status="NOT RUN" starttime="20230214 14:40:35.316" endtime="20230214 14:40:35.317"/>
 </iter>
-<status status="NOT RUN" starttime="20230214 13:53:34.681" endtime="20230214 13:53:34.681"/>
+<status status="NOT RUN" starttime="20230214 14:40:35.316" endtime="20230214 14:40:35.317"/>
 </for>
 <kw name="Get WebElements">
 <var>${rozbal}</var>
 <arg>${browser}</arg>
 <arg>//[@class='page-tour-cell page-tour-control']</arg>
-<status status="NOT RUN" starttime="20230214 13:53:34.681" endtime="20230214 13:53:34.682"/>
+<status status="NOT RUN" starttime="20230214 14:40:35.317" endtime="20230214 14:40:35.317"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>'${rozbal}'!=''</arg>
 <arg>Should Be Visible</arg>
 <arg>${rozbal}[0]</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="NOT RUN" starttime="20230214 13:53:34.682" endtime="20230214 13:53:34.682"/>
+<status status="NOT RUN" starttime="20230214 14:40:35.317" endtime="20230214 14:40:35.317"/>
 </kw>
 <kw name="Click Element">
 <arg>${rozbal}[0]</arg>
-<status status="NOT RUN" starttime="20230214 13:53:34.682" endtime="20230214 13:53:34.682"/>
+<status status="NOT RUN" starttime="20230214 14:40:35.317" endtime="20230214 14:40:35.317"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230214 13:53:34.682" endtime="20230214 13:53:34.682"/>
+<status status="NOT RUN" starttime="20230214 14:40:35.318" endtime="20230214 14:40:35.318"/>
 </kw>
 <kw name="Get WebElements">
 <var>${rozbalenyZajezd}</var>
 <arg>${browser}</arg>
 <arg>//[@class='page-tour-hotel-name']</arg>
-<status status="NOT RUN" starttime="20230214 13:53:34.682" endtime="20230214 13:53:34.682"/>
+<status status="NOT RUN" starttime="20230214 14:40:35.318" endtime="20230214 14:40:35.318"/>
 </kw>
 <kw name="Get WebElements">
 <var>${rozbalenyZajezdAll}</var>
 <arg>${browser}</arg>
 <arg>//*[@class='page-tour-hotel-name']</arg>
-<status status="NOT RUN" starttime="20230214 13:53:34.683" endtime="20230214 13:53:34.683"/>
+<status status="NOT RUN" starttime="20230214 14:40:35.318" endtime="20230214 14:40:35.318"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>'${rozbalenyZajezd}'!=''</arg>
 <arg>Should Be Visible</arg>
 <arg>${rozbalenyZajezd}[0]</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="NOT RUN" starttime="20230214 13:53:34.683" endtime="20230214 13:53:34.683"/>
+<status status="NOT RUN" starttime="20230214 14:40:35.318" endtime="20230214 14:40:35.318"/>
 </kw>
-<status status="FAIL" starttime="20230214 13:53:18.870" endtime="20230214 13:53:34.683">Maximum limit of started keywords and control structures exceeded.</status>
+<status status="FAIL" starttime="20230214 14:40:18.481" endtime="20230214 14:40:35.319">Maximum limit of started keywords and control structures exceeded.</status>
 </test>
-<status status="FAIL" starttime="20230214 13:53:18.634" endtime="20230214 13:53:34.684"/>
+<status status="FAIL" starttime="20230214 14:40:18.223" endtime="20230214 14:40:35.319"/>
 </suite>
 <statistics>
 <total>
@@ -655,6 +662,6 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230214 13:53:18.627" level="ERROR">Importing model modifier 'robot.libraries.BuiltIn.RobotPreRunModifier' failed: Module 'robot.libraries.BuiltIn' does not contain 'RobotPreRunModifier'.</msg>
+<msg timestamp="20230214 14:40:18.214" level="ERROR">Importing model modifier 'robot.libraries.BuiltIn.RobotPreRunModifier' failed: Module 'robot.libraries.BuiltIn' does not contain 'RobotPreRunModifier'.</msg>
 </errors>
 </robot>
